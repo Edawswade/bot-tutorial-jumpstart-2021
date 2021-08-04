@@ -18,14 +18,14 @@ api = tweepy.API(auth)
 
 
 # What the bot will tweet
-tweet_list = ['Test tweet one', 'Test tweet two', 'Test tweet three']
+tweet_list = ['I used an API!', 'Yay technology!', 'Python is cool :)']
 
 # loop through the tweet_list and tweet each item
 for line in tweet_list: 
     print('Tweeting:')
     print(line)
     api.update_status(status=line)
-    print('Pausing...')
-    time.sleep(5) # Pause for 5 seconds
+    print('Waiting...')
+    time.sleep(3) # Pause for 3 seconds
 
 print("All done!")
